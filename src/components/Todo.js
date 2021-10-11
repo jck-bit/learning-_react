@@ -1,23 +1,26 @@
 import { useState } from "react"
 import Modal from "./Modal";
-import Backdrops from "./Backdrops";
+import Backdrop from "./Backdrop";
 
-const Todo = (props) => {
+function Todo (props)  {
    const[ modalisOpen, setModalIsOpen ] = useState(false);
 
    function deleteHandler() {
        setModalIsOpen(true);
     }
+
+    function closeModalHandler (){
+        setModalIsOpen(false);
+    }
     return (
         <div className='card'>
-          <h2>{props.text}</h2>
+           <h2>{props.text}</h2>
           <div className='action'> 
             <button className='btn' onClick={deleteHandler }>Delete</button>
           </div>
-          { modalisOpen ? <Modal /> : null }
-          { modalisOpen ? <Backdrops /> : null }
-          <Modal />
-          <Backdrops />
+           { modalisOpen && <Modal onCancel={closeModalHandler} onConfirm={closeModalHandler}/>}
+           { modalisOpen && <Backdrop onCancel={closeModalHandler} /> }
+           
         </div>
     )
 }

@@ -7,7 +7,7 @@ function App() {
         <Todo text ='learn react' />
         <Todo text ='master react'/>
         <Todo text='Finish react course'/>
-        </div>
+      </div>
        
   );
 }
