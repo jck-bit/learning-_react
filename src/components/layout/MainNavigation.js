@@ -9,7 +9,7 @@ const MainNavigation = () => {
             <nav>
                 <ul>
                     <li>
-                        <Link to ='/'> Some Link</Link>
+                        <Link to ='/'>Old meetups</Link>
                     </li>
                     <li>
                         <Link to ='/new-meetups'>Add new meetups</Link>
