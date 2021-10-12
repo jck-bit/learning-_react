@@ -3,14 +3,14 @@ const DUMMYDATA= [
   {
     id: 'm1',
     title: 'The First Meetup',
-    image: 'https://en.wikipedia.org/wiki/File:Frauenkirche_and_Neues_Rathaus_Munich_March_2013.JPG',
+    image:'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/2560px-Stadtbild_M%C3%BCnchen.jpg',
     address: 'meetup street 5, 1234 meet city',
     description: 'This is a first meetup'
   },
   {
       id: 'm2',
       title: 'The second Meetup',
-      image: 'https://en.wikipedia.org/wiki/File:Frauenkirche_and_Neues_Rathaus_Munich_March_2013.JPG',
+      image:'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/2560px-Stadtbild_M%C3%BCnchen.jpg',
       address: 'meetup street 5, 1234 meet city',
       description: 'This is a first meetup'
     }
